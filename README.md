@@ -13,14 +13,18 @@ The dataset is divided into five training batches and one test batch, each with 
 > * [Defining a neural network architecture](https://github.com/priyavrat-misra/cifar10/blob/master/network.py "network.py")
 > * Hyper-parameter search and training the model
 >    - [without data augmentation](https://github.com/priyavrat-misra/cifar10/blob/master/train.ipynb "train.ipynb")
->    - [with data augmentation](https://github.com/priyavrat-misra/cifar10/blob/master/train_with_validation.ipynb "train_with_aug.ipynb")
+>    - [with data augmentation](https://github.com/priyavrat-misra/cifar10/blob/master/train_with_aug.ipynb "train_with_aug.ipynb")
+>    - [with VGG16 (transfer learning)](https://github.com/priyavrat-misra/cifar10/blob/master/train_with_vgg16.ipynb "train_with_vgg16.ipynb")
 > * [Evaluating the model's results and making cool graphs!](https://github.com/priyavrat-misra/cifar10/blob/master/results.ipynb "results.ipynb")
 
 ## Results:
-> || without data augmentation | with data augmentation |
+> || Train Accuracy | Test Accuracy |
 > | :- | -: | -: |
-> | Test Accuracy | 76.68% | 79.76% |
+> | without data augmentation | *81.69% | 76.68% | 
+> | with data augmentation | 85.15% | 79.76% |
+> | with transfer learning (VGG-16) | 96.99% | 87.33% |
+
+
+_<sub>* - running accuracy</sub>_
 
 <br>
-
-__Note:__ this project uses Tensorboard as an evaluation utility for checking running losses, accuracies, histograms and so on. So if you are wondering why there are no outputs (running loss, epoch number etc) while the network is training, use Tensorboard (_open terminal, change path to project's repo and run this command `tensorboard --logdir=runs`_) or if you aren't a fan of 3rd party tools, adding a bunch of print statements will do the job.
