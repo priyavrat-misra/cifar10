@@ -22,7 +22,7 @@ The dataset is divided into five training batches and one test batch, each with 
 > | :- | -: | -: |
 > | without data augmentation | *81.69% | 76.68% | 
 > | with data augmentation | 85.15% | 79.76% |
-> | with transfer learning (VGG-16) | 96.99% | 87.33% |
+> | with transfer learning (VGG-16) | 97.00% | 88.17% |
 
 
 _<sub>* - running accuracy</sub>_
