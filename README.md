@@ -20,9 +20,9 @@ The dataset is divided into five training batches and one test batch, each with 
 ## Results:
 > || Train Accuracy | Test Accuracy |
 > | :- | -: | -: |
-> | without data augmentation | *81.69% | 76.68% | 
+> | without data augmentation | *81.69% | 76.68% |
 > | with data augmentation | 85.15% | 79.76% |
-> | with transfer learning (VGG-16) | 97.00% | 88.17% |
+> | with transfer learning (VGG-16) | 92.89% | 85.93% |
 
 
 _<sub>* - running accuracy</sub>_
